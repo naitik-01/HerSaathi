@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact Us - HerSaathi</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background-color: #FFE5F0;
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    header {
+        background-color: #FFBCD6;
+        color: white;
+        text-align: center;
+        padding: 20px 0;
+        position: relative;
+    }
+    header img {
+        position: absolute;
+        left: 20px;
+        top: 10px;
+        width: 100px;
+        height: 100px;
+    }
+    nav {
+        background-color: #e5f1a1;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+    }
+    nav a {
+        color: black;
+        text-decoration: none;
+        padding: 0 15px;
+    }
+    main {
+        padding: 20px;
+    }
+    .contact-section {
+        max-width: 600px;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    }
+    .contact-section h2 {
+        margin-top: 0;
+        text-align: center;
+    }
+    .contact-section p {
+        text-align: center;
+        font-size: 18px;
+    }
+    .contact-section label {
+        display: block;
+        margin: 10px 0 5px;
+    }
+    .contact-section input, .contact-section textarea {
+        width: 100%;
+        padding: 8px;
+        border: 1px solid #ccc;
+        border-radius: 4px;
+    }
+    .contact-section textarea {
+        resize: vertical;
+        height: 100px;
+    }
+    .contact-section button {
+        margin-top: 10px;
+        padding: 10px 20px;
+        background-color: #DE5088;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        width: 100%;
+    }
+    .contact-section button:hover {
+        background-color: #c03b6f;
+    }
+    footer {
+        background-color: #DE5088;
+        color: white;
+        text-align: center;
+        padding: 10px 0;
+        position: sticky;
+        left: 0;
+        bottom: 0;
+        width: 100%;
+    }
+</style>
+</head>
+<body>
+    <header>
+        <img src="Preview (1).png" alt="HerSaathi Logo">
+        <h1>HerSaathi - Contact Us</h1>
+    </header>
+    <nav>
+        <a href="webpage.html">Home</a> |
+        <a href="education.html">Education Content</a> |
+        <a href="vlogs.html">Vlogs</a> |
+        <a href="Contactus.html">Contact Us</a> |
+        <a href="complain.html">File a Complaint</a>
+    </nav>
+    <main>
+        <section class="contact-section">
+            <h2>Contact Us</h2>
+            <p>Meerut Institute of Engineering and Technology (MIET), Meerut</p>
+            <form action="contact_form.php" method="POST">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+
+                <label for="query">Your Query:</label>
+                <textarea id="query" name="query" required></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>Impact@2024 Hackathon | Team Innovators</p>
+    </footer>
+</body>
+</html>
